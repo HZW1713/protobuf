@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.10
 // 	protoc        (unknown)
-// source: todo/v1/eliza.proto
+// source: todo/eliza.proto
 
 package todov1
 
@@ -31,7 +31,7 @@ type SayRequest struct {
 
 func (x *SayRequest) Reset() {
 	*x = SayRequest{}
-	mi := &file_todo_v1_eliza_proto_msgTypes[0]
+	mi := &file_todo_eliza_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -43,7 +43,7 @@ func (x *SayRequest) String() string {
 func (*SayRequest) ProtoMessage() {}
 
 func (x *SayRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_todo_v1_eliza_proto_msgTypes[0]
+	mi := &file_todo_eliza_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -56,7 +56,7 @@ func (x *SayRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SayRequest.ProtoReflect.Descriptor instead.
 func (*SayRequest) Descriptor() ([]byte, []int) {
-	return file_todo_v1_eliza_proto_rawDescGZIP(), []int{0}
+	return file_todo_eliza_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *SayRequest) GetSentence() string {
@@ -75,7 +75,7 @@ type SayResponse struct {
 
 func (x *SayResponse) Reset() {
 	*x = SayResponse{}
-	mi := &file_todo_v1_eliza_proto_msgTypes[1]
+	mi := &file_todo_eliza_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -87,7 +87,7 @@ func (x *SayResponse) String() string {
 func (*SayResponse) ProtoMessage() {}
 
 func (x *SayResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_todo_v1_eliza_proto_msgTypes[1]
+	mi := &file_todo_eliza_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -100,7 +100,7 @@ func (x *SayResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SayResponse.ProtoReflect.Descriptor instead.
 func (*SayResponse) Descriptor() ([]byte, []int) {
-	return file_todo_v1_eliza_proto_rawDescGZIP(), []int{1}
+	return file_todo_eliza_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *SayResponse) GetSentence() string {
@@ -110,11 +110,11 @@ func (x *SayResponse) GetSentence() string {
 	return ""
 }
 
-var File_todo_v1_eliza_proto protoreflect.FileDescriptor
+var File_todo_eliza_proto protoreflect.FileDescriptor
 
-const file_todo_v1_eliza_proto_rawDesc = "" +
+const file_todo_eliza_proto_rawDesc = "" +
 	"\n" +
-	"\x13todo/v1/eliza.proto\x12\atodo.v1\x1a\x1bbuf/validate/validate.proto\"4\n" +
+	"\x10todo/eliza.proto\x12\atodo.v1\x1a\x1bbuf/validate/validate.proto\"4\n" +
 	"\n" +
 	"SayRequest\x12&\n" +
 	"\bsentence\x18\x01 \x01(\tB\n" +
@@ -122,28 +122,28 @@ const file_todo_v1_eliza_proto_rawDesc = "" +
 	"\vSayResponse\x12\x1a\n" +
 	"\bsentence\x18\x01 \x01(\tR\bsentence2B\n" +
 	"\fElizaService\x122\n" +
-	"\x03Say\x12\x13.todo.v1.SayRequest\x1a\x14.todo.v1.SayResponse\"\x00B\x80\x01\n" +
+	"\x03Say\x12\x13.todo.v1.SayRequest\x1a\x14.todo.v1.SayResponse\"\x00B\x83\x01\n" +
 	"\vcom.todo.v1B\n" +
-	"ElizaProtoP\x01Z(github.com/HZW1713/go/gen/todo/v1;todov1\xa2\x02\x03TXX\xaa\x02\aTodo.V1\xca\x02\aTodo\\V1\xe2\x02\x13Todo\\V1\\GPBMetadata\xea\x02\bTodo::V1b\x06proto3"
+	"ElizaProtoP\x01Z+github.com/HZW1713/protobuf/gen/todo;todov1\xa2\x02\x03TXX\xaa\x02\aTodo.V1\xca\x02\aTodo\\V1\xe2\x02\x13Todo\\V1\\GPBMetadata\xea\x02\bTodo::V1b\x06proto3"
 
 var (
-	file_todo_v1_eliza_proto_rawDescOnce sync.Once
-	file_todo_v1_eliza_proto_rawDescData []byte
+	file_todo_eliza_proto_rawDescOnce sync.Once
+	file_todo_eliza_proto_rawDescData []byte
 )
 
-func file_todo_v1_eliza_proto_rawDescGZIP() []byte {
-	file_todo_v1_eliza_proto_rawDescOnce.Do(func() {
-		file_todo_v1_eliza_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_todo_v1_eliza_proto_rawDesc), len(file_todo_v1_eliza_proto_rawDesc)))
+func file_todo_eliza_proto_rawDescGZIP() []byte {
+	file_todo_eliza_proto_rawDescOnce.Do(func() {
+		file_todo_eliza_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_todo_eliza_proto_rawDesc), len(file_todo_eliza_proto_rawDesc)))
 	})
-	return file_todo_v1_eliza_proto_rawDescData
+	return file_todo_eliza_proto_rawDescData
 }
 
-var file_todo_v1_eliza_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
-var file_todo_v1_eliza_proto_goTypes = []any{
+var file_todo_eliza_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
+var file_todo_eliza_proto_goTypes = []any{
 	(*SayRequest)(nil),  // 0: todo.v1.SayRequest
 	(*SayResponse)(nil), // 1: todo.v1.SayResponse
 }
-var file_todo_v1_eliza_proto_depIdxs = []int32{
+var file_todo_eliza_proto_depIdxs = []int32{
 	0, // 0: todo.v1.ElizaService.Say:input_type -> todo.v1.SayRequest
 	1, // 1: todo.v1.ElizaService.Say:output_type -> todo.v1.SayResponse
 	1, // [1:2] is the sub-list for method output_type
@@ -153,26 +153,26 @@ var file_todo_v1_eliza_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_todo_v1_eliza_proto_init() }
-func file_todo_v1_eliza_proto_init() {
-	if File_todo_v1_eliza_proto != nil {
+func init() { file_todo_eliza_proto_init() }
+func file_todo_eliza_proto_init() {
+	if File_todo_eliza_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_todo_v1_eliza_proto_rawDesc), len(file_todo_v1_eliza_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_todo_eliza_proto_rawDesc), len(file_todo_eliza_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   2,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_todo_v1_eliza_proto_goTypes,
-		DependencyIndexes: file_todo_v1_eliza_proto_depIdxs,
-		MessageInfos:      file_todo_v1_eliza_proto_msgTypes,
+		GoTypes:           file_todo_eliza_proto_goTypes,
+		DependencyIndexes: file_todo_eliza_proto_depIdxs,
+		MessageInfos:      file_todo_eliza_proto_msgTypes,
 	}.Build()
-	File_todo_v1_eliza_proto = out.File
-	file_todo_v1_eliza_proto_goTypes = nil
-	file_todo_v1_eliza_proto_depIdxs = nil
+	File_todo_eliza_proto = out.File
+	file_todo_eliza_proto_goTypes = nil
+	file_todo_eliza_proto_depIdxs = nil
 }
