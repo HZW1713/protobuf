@@ -122,9 +122,9 @@ const file_todo_eliza_proto_rawDesc = "" +
 	"\vSayResponse\x12\x1a\n" +
 	"\bsentence\x18\x01 \x01(\tR\bsentence2B\n" +
 	"\fElizaService\x122\n" +
-	"\x03Say\x12\x13.todo.v1.SayRequest\x1a\x14.todo.v1.SayResponse\"\x00B\x83\x01\n" +
+	"\x03Say\x12\x13.todo.v1.SayRequest\x1a\x14.todo.v1.SayResponse\"\x00B\x86\x01\n" +
 	"\vcom.todo.v1B\n" +
-	"ElizaProtoP\x01Z+github.com/HZW1713/protobuf/gen/todo;todov1\xa2\x02\x03TXX\xaa\x02\aTodo.V1\xca\x02\aTodo\\V1\xe2\x02\x13Todo\\V1\\GPBMetadata\xea\x02\bTodo::V1b\x06proto3"
+	"ElizaProtoP\x01Z.github.com/HZW1713/protobuf/gen/go/todo;todov1\xa2\x02\x03TXX\xaa\x02\aTodo.V1\xca\x02\aTodo\\V1\xe2\x02\x13Todo\\V1\\GPBMetadata\xea\x02\bTodo::V1b\x06proto3"
 
 var (
 	file_todo_eliza_proto_rawDescOnce sync.Once
